@@ -5,5 +5,11 @@ Package.describe({
 Package.on_use(function(api){
   var both = ['client', 'server'];
 
+  api.use('coffeescript', both);
+
+  if(api.export){
+    api.export('MyValidator', 'my_validator.coffee');
+  }
+
   api.add_files(".npm/package/node_modules/validator/validator.js", both);
 });
