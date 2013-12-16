@@ -11,5 +11,6 @@ Package.on_use(function(api){
     api.export('MyValidator', 'my_validator.coffee');
   }
 
+  api.add_files("my_validator.coffee", both);
   api.add_files(".npm/package/node_modules/validator/validator.js", both);
 });
