@@ -12,5 +12,5 @@ Package.on_use(function(api){
   }
 
   api.add_files("my_validator.coffee", both);
-  api.add_files(".npm/package/node_modules/validator/validator.js", both);
+  api.add_files(".lib/validate.js", both);
 });
