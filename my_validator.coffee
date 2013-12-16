@@ -1,5 +1,5 @@
-MyValidator =
-  validateValidations: (data, validations) ->
+class MyValidator
+  @validateValidations: (data, validations) ->
     errors = []
     for field, value of data
       try
