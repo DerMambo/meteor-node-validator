@@ -8,7 +8,7 @@ Package.on_use(function(api){
   api.use('coffeescript', both);
 
   if(api.export){
-    api.export('MyValidator', 'my_validator.coffee');
+    api.export('MyValidator');
   }
 
   api.add_files("my_validator.coffee", both);
